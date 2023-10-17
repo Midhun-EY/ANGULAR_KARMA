@@ -21,4 +21,4 @@ jobs:
         run: npm install
 
       - name: run testcase
-        run: npm test
+        run:  npm test -- --watch=false --browsers=ChromeHeadless
