@@ -1,0 +1,25 @@
+
+name: Angular Karma Publish Release to Dev
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  run-e2e-test:
+    name: run unit testcases
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: run e2e testcase
+        run: npm run test:e2e:dev
