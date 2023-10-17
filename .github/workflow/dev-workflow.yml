@@ -3,7 +3,7 @@ name: Angular Karma Publish Release to Dev
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   run-e2e-test:
