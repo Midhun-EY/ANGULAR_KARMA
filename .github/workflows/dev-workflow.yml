@@ -19,9 +19,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-      
-      - name: Install Angular Cli
-        run: npm install @angular/cli@latest
 
       - name: run testcase
-        run: ng test
+        run: npm test
