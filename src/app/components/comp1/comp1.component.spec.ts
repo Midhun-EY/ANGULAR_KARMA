@@ -25,5 +25,6 @@ describe('AddTutorialComponent', () => {
 
   it('should create', () => {
     expect(component.saveTutorial).toBeTrue;
+    console.log('abc');
   });
 });
